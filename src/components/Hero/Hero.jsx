@@ -9,19 +9,19 @@ const ImageList = [
         id: 1,
         img: Image1,
         title: "Upto 50% off on all Men's Wear",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, nisi. Eligendi adipisci autem nostrum saepe nemo dolores rerum illum alias atque reprehenderit itaque voluptatum odit vel tempore corrupti, quo quis!",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, nisi. Eligendi",
     },
     {
         id: 2,
         img: Image2,
         title: "30% off on all Women's Wear",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos explicabo molestias placeat et, commodi ducimus ad, quibusdam ipsum optio consectetur, voluptatum adipisci aut recusandae quae itaque. Nam molestias repudiandae magnam!",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos explicabo molestias placeat et, commodi ducimus",
     },
     {
         id: 3,
         img: Image3,
         title: "70% off on all Products Sale",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos vero similique quod totam, error sit unde nobis rem dolores vel veniam quibusdam quas excepturi magnam voluptate aut, quisquam aliquam.",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos vero similique quod totam, error sit",
     },
 ];
 
@@ -55,19 +55,35 @@ function Hero() {
                     <div className='grid grid-cols-1 sm:grid-cols-2'>
                         {/* text content Section */}
                         <div className='flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10'>
-                            <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title}</h1>
-                            <p className='text-sm'>
+                            <h1
+                            data-aos="zoom-out"
+                            data-aos-duration="500"
+                            data-aos-once="true"
+                            className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title}</h1>
+                            <p 
+                            data-aos="fade-up"
+                            data-aos-duration="500"
+                            data-aos-delay="100"
+                            className='text-sm'>
                                 {data.description}
                             </p>
-                            <div>
+                            <div
+                            data-aos="fade-up"
+                            data-aos-duration="500"
+                            data-aos-delay="100"
+                            >
                                 <button className='bg-gradient-to-r from-primary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full'>Order Now</button>
                             </div>
                         </div>
                         {/* Image Section */}
                         <div className='order-1 sm:order-2'>
-                            <div className='relative z-10'>
+                            <div
+                            data-aos="zoom-in"
+                            data-aos-once="true"
+                            className='relative z-10'
+                            >
                                 <img src={data.img} alt=""
-                                className='w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain lg:scale-120 mx-auto'
+                                className='w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-120 lg:scale-125 object-contain mx-auto'
                                 />
                             </div>
                         </div>
